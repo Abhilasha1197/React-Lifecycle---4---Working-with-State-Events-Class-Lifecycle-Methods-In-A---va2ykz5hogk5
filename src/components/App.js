@@ -14,7 +14,10 @@ class App extends React.Component{
 
 
   render(){
-    console.log(`Rendering with count:-${this.state.count}`)
+   ({count}%2==0)?
+    console.log(`Rendering with count:-${this.state.count}`):undefined;
+   
+    
     return(
       <div>
         <span id="count">{this.state.count}</span>
