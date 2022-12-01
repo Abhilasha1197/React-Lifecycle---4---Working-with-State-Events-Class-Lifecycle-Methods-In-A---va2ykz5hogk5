@@ -4,18 +4,18 @@ import '../styles/App.css';
 class App extends React.Component{
   
   handleClick(){
-    this.setState({count: this.state.count + 2})
+    this.setState({count: this.state.count + 1,isCount:false})
   }
   constructor(props){
     super(props)
-    this.state = {count:0}
+    this.state = {count:0,isCount:true}
     this.handleClick = this.handleClick.bind(this)
   }
 
 
   render(){
- //(this.state.count %2 ==0)?
-   console.log(`Rendering with count:-${this.state.count}`);
+
+   console.log(`Rendering with count:-${this.state.count}`)
    
     
     return(
