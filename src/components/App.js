@@ -4,7 +4,7 @@ import '../styles/App.css';
 class App extends React.Component{
   
   handleClick(){
-    this.setState({count: this.state.count + 1})
+    this.setState({count: this.state.count + 2})
   }
   constructor(props){
     super(props)
@@ -14,8 +14,8 @@ class App extends React.Component{
 
 
   render(){
- (this.state.count %2 ==0)?
-    console.log(`Rendering with count:-${this.state.count}`):undefined;
+ //(this.state.count %2 ==0)?
+   // console.log(`Rendering with count:-${this.state.count}`):undefined;
    
     
     return(
