@@ -4,14 +4,20 @@ import '../styles/App.css';
 class App extends React.Component{
   
   handleClick(){
-    this.setState({count: this.state.count + 1,isCount:false})
+    this.setState({count: this.state.count + 1})
   }
   constructor(props){
     super(props)
-    this.state = {count:0,isCount:true}
+    this.state = {count:0}
     this.handleClick = this.handleClick.bind(this)
   }
-
+    shouldComponentUpdate(){
+      if(this.state.count % 2==0){
+        return false;
+      }else{
+        return true;
+      }
+    }   
 
   render(){
 
